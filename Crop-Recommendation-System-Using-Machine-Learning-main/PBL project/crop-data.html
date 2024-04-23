@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crop Information</title>
+    <link rel="stylesheet" href="crop.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+          <div class="logo">
+            <img src="pngs/logo.png" alt="Agriculture Info Logo">
+          </div>
+          <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contacts</a></li>
+          </ul>
+        </nav>
+    </header>
+    <div class="container">
+        <h1>Crop Information</h1>
+        <div class="crop-cards">
+            <div class="crop-card" onclick="navigateToCrop('rice')">
+                <img src="cropimgs/rice.webp" alt="rice">
+                <h2>Rice</h2>
+            </div>
+            <div class="crop-card" onclick="navigateToCrop('wheat')">
+                <img src="cropimgs/wheat.webp" alt="Crop 1">
+                <h2>Wheat</h2>
+            </div>
+            <div class="crop-card" onclick="navigateToCrop('jowar')">
+                <img src="cropimgs/jowar.jpg" alt="Crop 1">
+                <h2>Jowar</h2>
+            </div>
+            <div class="crop-card" onclick="navigateToCrop('bajra')">
+                <img src="cropimgs/bajra.webp" alt="Crop 1">
+                <h2>Bajra</h2>
+            </div>
+            <div class="crop-card" onclick="navigateToCrop('maize')">
+                <img src="cropimgs/maize.webp" alt="Crop 1">
+                <h2>Maize</h2>
+            </div>
+            <div class="crop-card" onclick="navigateToCrop('bhendi')">
+                <img src="cropimgs/bhendi.webp" alt="Crop 1">
+                <h2>Bhendi</h2>
+            </div>
+            <div class="crop-card" onclick="navigateToCrop('cabbage')">
+                <img src="cropimgs/cabbage.webp" alt="Crop 1">
+                <h2>Cabbage</h2>
+            </div>
+            <div class="crop-card" onclick="navigateToCrop('gavar')">
+                <img src="cropimgs/gavar.webp" alt="Crop 1">
+                <h2>Gavar</h2>
+            </div>
+            <div class="crop-card" onclick="navigateToCrop('potato')">
+                <img src="cropimgs/potato.webp" alt="Crop 1">
+                <h2>Potato</h2>
+            </div>
+            <div class="crop-card" onclick="navigateToCrop('onion')">
+                <img src="cropimgs/onion.webp" alt="Crop 1">
+                <h2>Onion</h2>
+            </div>
+            <div class="crop-card" onclick="navigateToCrop('mango')">
+                <img src="cropimgs/mango.webp" alt="Crop 1">
+                <h2>Mango</h2>
+            </div>
+            <div class="crop-card" onclick="navigateToCrop('banana')">
+                <img src="cropimgs/banana.webp" alt="Crop 1">
+                <h2>Banana</h2>
+            </div>
+            <div class="crop-card" onclick="navigateToCrop('chickoo')">
+                <img src="cropimgs/chickoo.webp" alt="Crop 1">
+                <h2>Chickoo</h2>
+            </div>
+            <div class="crop-card" onclick="navigateToCrop('grapes')">
+                <img src="cropimgs/grapes.webp" alt="Crop 1">
+                <h2>Grapes</h2>
+            </div>
+            <div class="crop-card" onclick="navigateToCrop('orange')">
+                <img src="cropimgs/orange.webp" alt="Crop 1">
+                <h2>Orange</h2>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function navigateToCrop(cropName) {
+            window.location.href = "crop.html?crop=" + cropName;
+        }
+    </script>
+</body>
+</html>
